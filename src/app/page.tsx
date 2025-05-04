@@ -9,7 +9,6 @@ interface Question {
   type: string;
 }
 
-// getServerSideProps
 // Gets the data first before rendering the page, server-side rendering
 async function getQuestions(): Promise<Question[]> {
   const res = await fetch('https://opentdb.com/api.php?amount=10', {
